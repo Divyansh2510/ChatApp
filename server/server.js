@@ -13,7 +13,7 @@ const server = http.createServer(app)
 app.use(express.json({ limit: '4mb' }));
 // app.use(cors());
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin:[ "http://localhost:5173","https://chat-app-alpha-ochre-94.vercel.app"],
     credentials: true
 }));
 
